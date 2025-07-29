@@ -1,0 +1,76 @@
+/* Floating Action Buttons */
+.fab-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+.fab-main {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.fab-main:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.1);
+}
+
+.fab-options {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: var(--transition);
+}
+
+.fab-container.active .fab-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.fab-option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.25rem;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.fab-option:hover {
+  transform: translateY(-3px);
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.phone {
+  background-color: #3B82F6;
+}
+
+.email {
+  background-color: #EA4335;
+}
