@@ -1,6 +1,55 @@
+/* Add these variables to your :root or global styles */
+:root {
+  --black: #000;
+  --dark-color: #1a1a1a;
+  --white: #fff;
+  --medium-gray: #ccc;
+  --primary-color: #2563eb;
+  --primary-light: #3b82f6;
+  --primary-dark: #1e40af;
+  --secondary-color: #10b981;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s ease;
+  --transition-fast: all 0.15s ease;
+}
+
 /* Services Section */
 .services-section {
+  padding: 5rem 0;
   background-color: var(--black);
+  color: var(--white);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-subtitle {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  color: var(--medium-gray);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .services-grid {
@@ -57,11 +106,18 @@
 .service-card h3 {
   margin-bottom: 15px;
   color: var(--white);
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: var(--medium-gray);
+  margin-bottom: 1rem;
 }
 
 .service-features {
   list-style: none;
   margin: 20px 0;
+  padding: 0;
 }
 
 .service-features li {
@@ -73,8 +129,9 @@
   color: var(--medium-gray);
 }
 
-.service-features i {
+.feature-icon {
   color: var(--secondary-color);
+  font-size: 0.9rem;
 }
 
 .learn-more {
@@ -84,18 +141,21 @@
   color: var(--primary-color);
   font-weight: 600;
   font-size: 0.95rem;
+  text-decoration: none;
+  margin-top: 1rem;
 }
 
-.learn-more i {
+.arrow-icon {
   transition: var(--transition-fast);
 }
 
-.learn-more:hover i {
+.learn-more:hover .arrow-icon {
   transform: translateX(3px);
 }
 
 .cta-banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
@@ -106,13 +166,15 @@
   background-image: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
 }
 
-.cta-banner h3 {
+.banner-content h3 {
   color: white;
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
-.cta-banner p {
+.banner-content p {
   color: rgba(255, 255, 255, 0.9);
+  margin: 0;
 }
 
 .banner-cta {
@@ -125,9 +187,27 @@
   transition: var(--transition);
   border: none;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .banner-cta:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cta-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .banner-content {
+    text-align: center;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
 }

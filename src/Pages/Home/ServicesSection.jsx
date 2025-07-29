@@ -9,7 +9,9 @@ const ServicesSection = () => {
         <div className="section-header" data-aos="fade-up">
           <p className="section-subtitle">Our Expertise</p>
           <h2>Comprehensive Business Solutions</h2>
-          <p className="section-description">We offer end-to-end services designed to address your most critical business challenges and opportunities.</p>
+          <p className="section-description">
+            We offer end-to-end services designed to address your most critical business challenges and opportunities.
+          </p>
         </div>
         
         <div className="services-grid">
@@ -20,11 +22,11 @@ const ServicesSection = () => {
             <h3>Custom Software Development</h3>
             <p>Tailored applications built to streamline your operations and enhance productivity with cutting-edge technology.</p>
             <ul className="service-features">
-              <li><FaCheckCircle /> Web & Mobile Applications</li>
-              <li><FaCheckCircle /> Enterprise Solutions</li>
-              <li><FaCheckCircle /> API Integrations</li>
+              <li><FaCheckCircle className="feature-icon" /> Web & Mobile Applications</li>
+              <li><FaCheckCircle className="feature-icon" /> Enterprise Solutions</li>
+              <li><FaCheckCircle className="feature-icon" /> API Integrations</li>
             </ul>
-            <a href="#" className="learn-more">Explore <FaArrowRight /></a>
+            <a href="#!" className="learn-more">Explore <FaArrowRight className="arrow-icon" /></a>
           </div>
           
           <div className="service-card" data-aos="fade-up" data-aos-delay="200">
@@ -34,11 +36,11 @@ const ServicesSection = () => {
             <h3>Cloud & DevOps Services</h3>
             <p>Scalable cloud infrastructure and CI/CD pipelines to accelerate your digital transformation journey.</p>
             <ul className="service-features">
-              <li><FaCheckCircle /> AWS/Azure/GCP Migration</li>
-              <li><FaCheckCircle /> Containerization</li>
-              <li><FaCheckCircle /> Infrastructure as Code</li>
+              <li><FaCheckCircle className="feature-icon" /> AWS/Azure/GCP Migration</li>
+              <li><FaCheckCircle className="feature-icon" /> Containerization</li>
+              <li><FaCheckCircle className="feature-icon" /> Infrastructure as Code</li>
             </ul>
-            <a href="#" className="learn-more">Explore <FaArrowRight /></a>
+            <a href="#!" className="learn-more">Explore <FaArrowRight className="arrow-icon" /></a>
           </div>
           
           <div className="service-card" data-aos="fade-up" data-aos-delay="300">
@@ -48,11 +50,11 @@ const ServicesSection = () => {
             <h3>Data Analytics & AI</h3>
             <p>Turn your data into actionable insights with our advanced analytics and machine learning solutions.</p>
             <ul className="service-features">
-              <li><FaCheckCircle /> Business Intelligence</li>
-              <li><FaCheckCircle /> Predictive Analytics</li>
-              <li><FaCheckCircle /> AI/ML Implementation</li>
+              <li><FaCheckCircle className="feature-icon" /> Business Intelligence</li>
+              <li><FaCheckCircle className="feature-icon" /> Predictive Analytics</li>
+              <li><FaCheckCircle className="feature-icon" /> AI/ML Implementation</li>
             </ul>
-            <a href="#" className="learn-more">Explore <FaArrowRight /></a>
+            <a href="#!" className="learn-more">Explore <FaArrowRight className="arrow-icon" /></a>
           </div>
           
           <div className="service-card" data-aos="fade-up" data-aos-delay="400">
@@ -62,11 +64,11 @@ const ServicesSection = () => {
             <h3>Cybersecurity Services</h3>
             <p>Comprehensive protection for your digital assets with our enterprise-grade security solutions.</p>
             <ul className="service-features">
-              <li><FaCheckCircle /> Risk Assessment</li>
-              <li><FaCheckCircle /> Penetration Testing</li>
-              <li><FaCheckCircle /> Security Operations</li>
+              <li><FaCheckCircle className="feature-icon" /> Risk Assessment</li>
+              <li><FaCheckCircle className="feature-icon" /> Penetration Testing</li>
+              <li><FaCheckCircle className="feature-icon" /> Security Operations</li>
             </ul>
-            <a href="#" className="learn-more">Explore <FaArrowRight /></a>
+            <a href="#!" className="learn-more">Explore <FaArrowRight className="arrow-icon" /></a>
           </div>
         </div>
         
